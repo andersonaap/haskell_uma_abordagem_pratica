@@ -20,9 +20,10 @@ mults' a b
 	| otherwise = []
 
 
-mults''  a b = filter (\x -> mult3 x) [a..b]
+mults'' a b = filter (\x -> mult3 x) [a..b]
 mults''' a b = filter mult3 [a..b]
 mults'''' a b = [x | x <- filter mult3 [a..b]]
+mults''''' a b = [x | x <- [a..b], mult3 x]
 
 
 mults = mults'
