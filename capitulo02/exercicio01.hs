@@ -30,16 +30,14 @@ somaexc = somaexc''
 
 main = print
 	[
-	(True)
+	  somainc 1 1  == 1
+	, somainc 1 2  == 3
+	, somainc 1 4  == 10
+	, somainc 1 5  == 15
+	, somainc 5 10 == 45
 
-	, (somainc 1 1)  == 1
-	, (somainc 1 2)  == 3
-	, (somainc 1 4)  == 10
-	, (somainc 1 5)  == 15
-	, (somainc 5 10) == 45
-
-	, (somaexc 1 2)  == 0
-	, (somaexc 1 3)  == 2
-	, (somaexc 1 6)  == 14
-	, (somaexc 5 10) == 30
+	, somaexc 1 2  == 0
+	, somaexc 1 3  == 2
+	, somaexc 1 6  == 14
+	, somaexc 5 10 == 30
 	]

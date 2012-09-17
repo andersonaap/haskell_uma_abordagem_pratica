@@ -6,11 +6,11 @@ faca uma funcao mmc entre
 maximo a b c = max a (max b c)
 multiplo num d = mod num d == 0
 
-aux a b c i
+auxmmc a b c i
 	| (multiplo i a) && (multiplo i b) && (multiplo i c) = i
-	| otherwise = if i < a*b*c then aux a b c (i + 1) else i
+	| otherwise = auxmmc a b c (i + 1)
 
-mmc a b c = aux a b c (maximo a b c)
+mmc a b c = auxmmc a b c (maximo a b c)
 
 
 
