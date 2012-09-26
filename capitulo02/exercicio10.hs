@@ -1,9 +1,7 @@
 {-
-10
 calcule o mdc entre 2 numeros
 caso contrario 0
 -}
-import Data.List
 
 auxmdc a b i
 	| (divisor i a) && (divisor i b) = i
